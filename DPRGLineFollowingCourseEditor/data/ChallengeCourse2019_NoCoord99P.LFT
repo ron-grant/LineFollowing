@@ -1,0 +1,80 @@
+#Rows 6
+#Cols 12
+#GridLineWidth 0.1250
+#GridLineColor 255,200,200 
+#BorderLetters 0
+#Scale 0.96
+#TileSize 12.0000
+#ThinWidth 0.3750
+#WideWidth 1.5000
+#NormalWidth 0.7500
+#SVGScale 1.0000
+BEGIN
+A01 dir2 CORNER DS *T
+A02 dir1 CORNER DS *T
+A03 dir0  EMPTY DS *E
+A04 dir2    ARC DS *
+A05 dir3  NOTCH DS *
+A06 dir1      F DS *
+A07 dir1      F DS *4
+A08 dir1      F DS *
+A09 dir1      F DS *
+A10 dir1      F DS *6
+A11 dir1   GATE DS *
+B01 dir3    ARC DS *
+B02 dir1 DCURVE DS *W
+B03 dir1      F DS *8
+B04 dir0 DCURVE DS *
+B05 dir1      F DS *
+B06 dir1 SCURVE DS *T
+B07 dir1      F DS *I
+B08 dir1    ARC DS *
+B09 dir2    ARC DS *
+B10 dir1 CORNER DS *
+C01 dir2    ARC DS *JL
+C02 dir0    ARC DS *
+C03 dir2    ARC DS *WI
+C04 dir0  CROSS DS *I
+C05 dir1      F DS *
+C06 dir1      F DS *
+C07 dir3  NOTCH DS *TI
+C08 dir1 DCURVE DS *T
+C09 dir0 DCURVE DS *
+C10 dir0    ARC DS *
+C12 dir0  START DS *
+D01 dir3    ARC DS *
+D02 dir1 SCURVE DS *
+D03 dir0 CORNER DS *
+D04 dir2  NOTCH DS *W
+D05 dir2 CORNER DS *W
+D06 dir1    ARC DS *
+D07 dir2    ARC DS *
+D08 dir1 DCURVE DS *
+D09 dir0    ARC DS *JL
+D10 dir2  ACUTE DS *
+D12 dir0      F DS *
+E01 dir2 CORNER DS *WI
+E02 dir1    GAP DS *
+E03 dir3  NOTCH DS *I
+E04 dir0  CROSS DS *
+E05 dir0 DCURVE DS *
+E06 dir0 DCURVE DS *
+E07 dir0 DCURVE DS *I
+E08 dir0 DCURVE DS *I
+E09 dir1 CORNER DS *
+E10 dir0      F DS *
+E11 dir0      F DS *T
+E12 dir0      F DS *JL
+F01 dir3 CORNER DS *
+F02 dir1      F DS *I2
+F03 dir1 SCURVE DS *I
+F04 dir0    ARC DS *
+F05 dir3    ARC DS *
+F06 dir0 CORNER DS *I
+F07 dir3    ARC DS *I
+F08 dir0    ARC DS *I
+F09 dir3    ARC DS *
+F10 dir0    ARC DS *
+F11 dir3    ARC DS *
+F12 dir0    ARC DS *
+END

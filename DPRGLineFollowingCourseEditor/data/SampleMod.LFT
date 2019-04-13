@@ -1,0 +1,21 @@
+#Rows 3
+#Cols 3
+#GridLineWidth 0.1250
+#GridLineColor 255,200,200 
+#BorderLetters 1
+#Scale 1.0000
+#TileSize 12.0000
+#ThinWidth 0.3750
+#WideWidth 1.5000
+#NormalWidth 0.7500
+#SVGScale 200.0000
+BEGIN
+A01 dir2    ARC DL *JR
+A02 dir1      F DS *IJR
+A03 dir1 CORNER DL *
+B01 dir0  START DS *
+B03 dir0    GAP DS *WI
+C01 dir3    ARC DL *
+C02 dir1 SCURVE DL *I
+C03 dir0 CORNER DL *
+END

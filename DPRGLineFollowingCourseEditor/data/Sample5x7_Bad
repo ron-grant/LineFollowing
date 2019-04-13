@@ -1,0 +1,35 @@
+#Rows 5
+#Cols 7
+#GridLineWidth 0.1250
+#GridLineColor 255,200,200 
+#BorderLetters 1
+#Scale 1.0000
+#TileSize 12.0000
+#ThinWidth 0.3750
+#WideWidth 1.5000
+#NormalWidth 0.7500
+#SVGScale 200.0000
+BEGIN
+A01 dir2    ARC DS *
+A02 dir3      F DS *
+A03 dir1  NOTCH DS *
+A04 dir1  ACUTE DS *
+B01 dir0 SCURVE DS *
+B03 dir2    ARC DS *
+C01 dir2      F DS *
+C02 dir2 CORNER DS *
+C03 dir0 DCURVE DS *
+C04 dir1    ARC DS *
+C07 dir0  START DS *
+D01 dir3 CORNER DS *
+D02 dir1    GAP DS *
+D03 dir0  CROSS DS *
+D04 dir0    ARC DS *
+D07 dir0      F DS *
+E02 dir0 CORNER DS *
+E03 dir3    ARC DS *
+E04 dir1      F DS *
+E05 dir1      F DS *
+E06 dir3      F DS *
+E07 dir0    ARC DS *
+END

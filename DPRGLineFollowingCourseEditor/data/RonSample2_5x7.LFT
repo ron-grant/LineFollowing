@@ -1,0 +1,40 @@
+#Rows 6
+#Cols 12
+#GridLineWidth 0.1250
+#GridLineColor 255,200,200 
+#BorderLetters 1
+#Scale 1.0000
+#TileSize 12.0000
+#ThinWidth 0.3750
+#WideWidth 1.5000
+#NormalWidth 0.7500
+#SVGScale 200.0000
+BEGIN
+A03 dir0  EMPTY DS *I
+A04 dir0  EMPTY DS *I
+A05 dir0  EMPTY DS *I
+A06 dir2 CORNER DS *I
+A07 dir1      F DS *I
+A08 dir1 CORNER DS *I
+B04 dir2    ARC DL *I
+B05 dir1    ARC DL *I
+B06 dir3    ARC DL *
+B07 dir1    GAP DS *W
+B08 dir0  CROSS DS *
+B09 dir1      F DS *
+B10 dir1    ARC DL *
+C02 dir0  EMPTY DS *E
+C04 dir0      F DS *
+C05 dir3    ARC DL *
+C06 dir1    GAP DS *
+C07 dir1 SCURVE DS *I
+C08 dir0  CROSS DS *
+C09 dir1 SCURVE DS *
+C10 dir0    ARC DL *
+D04 dir0 CORNER DS *
+D08 dir0   GATE DS *
+E03 dir3  ACUTE DS *
+E04 dir1 SCURVE DS *
+E05 dir1  START DS *
+E06 dir1      F DS *
+END

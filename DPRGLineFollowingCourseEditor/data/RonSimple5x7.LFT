@@ -1,0 +1,24 @@
+#Rows 5
+#Cols 7
+#GridLineWidth 0.1250
+#GridLineColor 255,200,200 
+#BorderLetters 1
+#Scale 1.0000
+#TileSize 12.0000
+#ThinWidth 0.3750
+#WideWidth 1.5000
+#NormalWidth 0.7500
+#SVGScale 200.0000
+BEGIN
+B05 dir2    ARC DL *
+B06 dir1      F DS *
+B07 dir1    ARC DL *
+C02 dir0  EMPTY DS *E
+C05 dir0 SCURVE DS *
+C07 dir0  START DS *
+D05 dir0 SCURVE DS *
+D07 dir0      F DS *
+E05 dir3 CORNER DS *
+E06 dir1      F DS *
+E07 dir0    ARC DL *
+END

@@ -1,0 +1,143 @@
+;
+;   Challenge BAK
+;
+;Comments follow semicolons
+;Parameters use leading # character
+; 
+;Path Instructions contain optional modifier characters followed by dot "." then command opcode
+;characters.
+;
+; [Modifier(s).]Command  e.g. TI.RA    Thin Inverted (White on Black) Right Turn Arc 
+;
+; Modifiers 
+; L  Jump To The Left 1.5"
+; R  Jump To The Right 1.5"
+; T  Thin Line
+; W  Wide Line
+; I  Inverted Tile
+; 2  20% stain Stain20.svg pattern loaded 
+; 4  40% stain Stain40.svg pattern loaded
+; 6  60% stain
+; 8  80% stain
+;
+;
+; Commands
+; F      Straight Forward Whole Tile
+; FG     Straight Forward with Gap
+; LA     Left Arc 90
+; RA     Right Arc 90
+; RV     Acute Angle "V" with Right Turn    
+; LV     Acute Angle "V  with Left Turn (may not be implemented)
+; LT     Left Turn 90  (sharp 90 degree corner)
+; RT     Right Turn 90 (sharp 90 degree corner)
+; LS     S-Curve Turn Left first  (jagged sine/saw wave)
+; RS     S-Curve Turn Right first  
+; LN     Notch Left  
+; RN     Notch Right   
+; END    End Program - Usually Final Instruction -- handy for simple debug if placed in
+;                      middle of instruction list
+;
+; Parameters follow below.
+;
+#Rows 6
+#Cols 12
+#GridLineWidth 0.125
+#GridColor 255,0,0
+#StartRow C
+#StartCol 12
+#StartDir N       ; starting path direction   N E S W  (N for DPRG Challenge Course 2019)
+                  ; starting with different direction works except for parts of "hard coded" gate
+                  ; also Rows,Cols needs adjusment and starting tile
+#BorderLetters 1  ; 1 or 0   if 1 (enabled) SVG Document Properties will need to be adjusted in inkscape
+                  ; 12 must be added to width and height of Document Properties Page Tab
+#Scale 1.00       ; handy to allow small border if BorderLetters not being used.  e.g. try 0.98
+#TileSize 12      ; Set Tile size (square) in inches 
+#ThinWidth   0.375 ; Thin Line Width  T modifier
+#WideWidth 1.5  ; Wide Line Width  W modifier 
+#NormalWidth 0.75 ; Normal (default) line width
+BEGIN             ; after all parameters GRID BEGIN required 
+;
+; Path Program Starts Here ---- This is program for DPRG Challenge Course 2019
+; Some notation of current Tile was made for first part of program. 
+; Also check console listing that provides program generated tile coordinates and heading 
+;
+START   ; C12 straight line with start/fin line in center of tile   
+F       ; D12 forward
+R.F     ; E12 jog right forward
+LA      ; F12 left arc 
+LA      ; F11 left arc
+T.F     ; E11 thin straight 
+RV      ; D11 acute angle special case covers 2x2 tiles -- OTHER THAN "STANDARD" ORIENTATION NOT TESTED
+I.F     ; E10
+I.LA    ; F10 inverted tile left arc 
+LA      ; F9 left arc
+RT      ; E9
+I.RA    ; E8
+I.LA    ;      inverted left arc
+IT.LA   ; F7   inverted thin left arc
+I.LA    ; 
+I.RA    ;
+I.RA
+RA
+RA      ; code gets less commented here -- just started writing commands then checking
+I.LA    ; one problem is turns are relative so one wrong turn instruction and everything becomes a mess
+RA
+I.LT
+LA
+LA
+RA
+RA
+W.RT
+LA
+F
+I.LN
+FG       ; gap in E2
+IW.RT
+RT
+2I.F   ; F2 inverted line with 20% stain background on inverted tile
+I.LS   ; S-curve inverted
+RA
+F      ;    straight whole
+W.LN   ; d4 wide notch left
+I.F    ; c4    (Apr 2, 2019  added I.)
+LA
+F
+T.LS   ; b6 thin S curve 
+I.F
+LA
+T.RA
+RA     ; c9 right arc
+LA     
+LT
+LA
+RA
+RT.LA  ; right jog on left arc thin
+LA
+T.RA
+IT.LN  ; c7 notch left thin (inverted tiles above stain) 
+F
+F
+I.F
+IW.RA
+LT
+LS     ; d2 S-Curve
+LA
+R.LA   ; c1 right arc with jog right
+RA
+W.RA
+LA
+T.LT    ; a1 thin left
+T.LT    ; a2 thin left
+W.RA    ; a2 thick right arc by robot logo
+8.F    ; b3 80% stain background 
+RA
+LA
+RN       ; a5 notch right
+F        ; a6 straight line (final run down to custom gate)
+4.F      ; a7 straight line 40% stain background
+F
+F
+6.F     ; a10 straght path 60% stain background
+G1      ; gate1 custom code (or draw in Inkscape... )
+END     ; place END after last path instruction, can be anywhere in code to stop - for debug - 
+        ;  make sure to save this Tab before running

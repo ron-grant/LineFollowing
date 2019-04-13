@@ -1,0 +1,19 @@
+; empty 6x12 
+#Rows 6
+#Cols 12
+#GridLineWidth 0.125
+#GridColor 255,0,0
+#StartRow C
+#StartCol 12
+#StartDir N       ; starting path direction   N E S W  (N for DPRG Challenge Course 2019)
+                  ; starting with different direction works except for parts of "hard coded" gate
+                  ; also Rows,Cols needs adjusment and starting tile
+#BorderLetters 1  ; 1 or 0   if 1 (enabled) SVG Document Properties will need to be adjusted in inkscape
+                  ; 12 must be added to width and height of Document Properties Page Tab
+#Scale 1.00       ; handy to allow small border if BorderLetters not being used.  e.g. try 0.98
+#TileSize 12      ; Set Tile size (square) in inches 
+#ThinWidth   0.375 ; Thin Line Width  T modifier
+#WideWidth 1.5  ; Wide Line Width  W modifier 
+#NormalWidth 0.75 ; Normal (default) line width
+BEGIN             ; after all parameters GRID BEGIN required 
+END

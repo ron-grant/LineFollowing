@@ -99,9 +99,9 @@
    
 */   
 
-//import processing.svg.*;  // library that supports drawing to SVG using   line arc shape methods..  
+import processing.svg.*;  // library that supports drawing to SVG using   line arc shape methods..  
 
-boolean allowSVGOut = false;
+boolean allowSVGOut = true;
 
 String PROGRAM_TITLE = "DPRG Line Following Course Editor 0.95";
 boolean showTitle = true;

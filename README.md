@@ -1,7 +1,7 @@
 This repository contains a number of sketches I have written in Processing (java based programming environment).
 To run them visit processing.org and download Processing. Once you have gained some familiarity with the environment. Copy sketch folders to your processing sketch folder and they will be ready to execute.
 
-Note: Line Follower Simulator is in separate repository http://github/ron-grant/LFS
+Note: Line Follower Simulator is in separate repository http://github.com/ron-grant/LFS
 
 DPRGLineFollowingCourseEditor - Interactive Editor for producing SVG (Scalable Vector Files) suitable for producing line following courses as currently used by Dallas Personal Robotics Group (www.dprg.org).
 
